@@ -1,0 +1,45 @@
+<!Doctype html>
+<html>
+<head>
+<style>
+#bgimg{
+      position:absolute;
+      filter:blur(7px);
+      width:1437px;
+      height:787px;
+      background-repeat:repeat;
+      background-image:url("bgimg-modified.jpeg");
+  }
+    @media only screen and(max-width:450px){
+        #logincard{
+            width:260px;
+            background-color: aqua;
+        }
+    }
+</style>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script> 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+
+        <div class="container border shadow rounded p-4" id="logincard" style="max-width:300px; height:350px; margin-top:210px;">
+    <h4 class="text-primary text-center">Staff Login</h4>
+    <div class="form-outline mb-2">
+        <label class="form-label">Staff ID</label>
+        <input type="text" name="staffid" placeholder="Enter Staff ID" class="form-control"/>
+    </div>
+      <div class="form-outline mb-2">
+        <label class="form-label">Password</label>
+        <input type="password" name="staffpassword" placeholder="Enter Password" class="form-control"/>
+    </div>
+    <a href="#" class="text-decoration-none float-end">Forgot Password ?</a>
+
+ <button id="btn" Class="btn btn-primary rounded border mt-5">Log In</button>
+</div>
+        
+    
+</body>
+</html>
+

@@ -1,0 +1,525 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>General Information</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+           <style>
+            body{
+                margin: 0;
+                box-sizing: border-box;
+                background-color:  #e8e7e3;
+    
+                font-family: 'Poppins', sans-serif;
+            }
+               
+               td, th{
+                   width:170px;
+               }
+               
+               ul{
+                list-style: none;
+                display: flex;
+                justify-content: space-around;
+               }
+               
+               @media only screen and (max-width:450px){
+
+                   a{
+                       font-size: 7px;
+                   }
+                   span{
+                     font-size: 9px;
+                   }
+                   .topbtn{
+                       font-size: 10px;
+                      height: 35px;
+                   }
+                   .belowline{
+                       flex-direction: column;
+                   }
+                   table{
+                       width:320px;
+                       font-size: 14px;
+                   }
+                   
+               }
+               .opt{
+                   min-width: 130px;
+                 
+               }
+               
+               
+        </style>
+        <script>
+            $(document).ready(function(){
+                 $("#enroll").show();
+                 $("#photo").hide();
+                 $("#parent").hide();
+                 $("#document").hide();
+                 $("#sign").hide();
+                 $("#lunch").hide();
+                 $("#health").hide();
+                 $("#siblings").hide();
+                 $("#contact").hide();
+     $(".enrollbtn").css("border-bottom","4px solid #166FE5");
+                $(".photobtn").click(function(){
+                    $("#enroll").hide();
+                    $("#photo").show(); 
+                    $("#parent").hide();
+                    $("#document").hide();
+                    $("#sign").hide();
+                    $("#lunch").hide();
+                    $("#health").hide();
+                    $("#siblings").hide();
+                    $("#contact").hide();
+                    $(".photobtn").css("border-bottom","4px solid blue");
+                       
+                    $(".parentbtn").css("border-bottom","0px solid blue");
+                     $(".lunchbtn").css("border-bottom","0px solid blue");
+                     $(".signbtn").css("border-bottom","0px solid blue");
+                     $(".documentbtn").css("border-bottom","0px solid blue");
+                     $(".contactbtn").css("border-bottom","0px solid blue");
+                     $(".enrollbtn").css("border-bottom","0px solid blue");
+                     $(".healthbtn").css("border-bottom","0px solid blue");
+              
+                     $(".siblingsbtn").css("border-bottom","0px solid blue");
+                });
+                
+                  $(".enrollbtn").click(function(){
+                   
+                    $("#photo").hide(); 
+                    $("#parent").hide();
+                    $("#document").hide();
+                    $("#sign").hide();
+                    $("#lunch").hide();
+                    $("#health").hide();
+                    $("#siblings").hide();
+                    $("#contact").hide();
+                    $("#enroll").show();
+                    $(".enrollbtn").css("border-bottom","4px solid blue");
+                         
+                    $(".parentbtn").css("border-bottom","0px solid blue");
+                     $(".lunchbtn").css("border-bottom","0px solid blue");
+                     $(".signbtn").css("border-bottom","0px solid blue");
+                     $(".documentbtn").css("border-bottom","0px solid blue");
+                     $(".contactbtn").css("border-bottom","0px solid blue");
+                   
+                     $(".healthbtn").css("border-bottom","0px solid blue");
+                     $(".photobtn").css("border-bottom","0px solid blue");
+                     $(".siblingsbtn").css("border-bottom","0px solid blue");
+                });
+                 $(".healthbtn").click(function(){
+                    $("#photo").hide(); 
+                    $("#document").hide();
+                    $("#sign").hide();
+                    $("#lunch").hide();
+                    $("#health").show();
+                    $("#siblings").hide();
+                    $("#contact").hide();
+                    $("#enroll").hide();
+                     $("#parent").hide();
+                    $(".healthbtn").css("border-bottom","4px solid blue");
+                        
+                    $(".parentbtn").css("border-bottom","0px solid blue");
+                     $(".lunchbtn").css("border-bottom","0px solid blue");
+                     $(".signbtn").css("border-bottom","0px solid blue");
+                     $(".documentbtn").css("border-bottom","0px solid blue");
+                     $(".contactbtn").css("border-bottom","0px solid blue");
+                     $(".enrollbtn").css("border-bottom","0px solid blue");
+    
+                     $(".photobtn").css("border-bottom","0px solid blue");
+                     $(".siblingsbtn").css("border-bottom","0px solid blue");
+                });
+                
+                 $(".lunchbtn").click(function(){
+                    $("#photo").hide(); 
+                    $("#document").hide();
+                    $("#sign").hide();
+                    $("#lunch").show();
+                    $("#health").hide();
+                    $("#siblings").hide();
+                    $("#contact").hide();
+                    $("#enroll").hide();
+                     $("#parent").hide();
+                    $(".lunchbtn").css("border-bottom","4px solid blue");
+                        
+                    $(".parentbtn").css("border-bottom","0px solid blue");
+         
+                     $(".signbtn").css("border-bottom","0px solid blue");
+                     $(".documentbtn").css("border-bottom","0px solid blue");
+                     $(".contactbtn").css("border-bottom","0px solid blue");
+                     $(".enrollbtn").css("border-bottom","0px solid blue");
+                     $(".healthbtn").css("border-bottom","0px solid blue");
+                     $(".photobtn").css("border-bottom","0px solid blue");
+                     $(".siblingsbtn").css("border-bottom","0px solid blue");
+                });
+                
+                 $(".documentbtn").click(function(){
+                    $("#photo").hide(); 
+                    $("#document").show();
+                    $("#sign").hide();
+                    $("#lunch").hide();
+                    $("#health").hide();
+                    $("#siblings").hide();
+                    $("#contact").hide();
+                    $("#enroll").hide();
+                     $("#parent").hide();
+                    $(".documentbtn").css("border-bottom","4px solid blue");
+                        
+                    $(".parentbtn").css("border-bottom","0px solid blue");
+                     $(".lunchbtn").css("border-bottom","0px solid blue");
+                     $(".signbtn").css("border-bottom","0px solid blue");
+                 
+                     $(".contactbtn").css("border-bottom","0px solid blue");
+                     $(".enrollbtn").css("border-bottom","0px solid blue");
+                     $(".healthbtn").css("border-bottom","0px solid blue");
+                     $(".photobtn").css("border-bottom","0px solid blue");
+                     $(".siblingsbtn").css("border-bottom","0px solid blue");
+                });
+                
+                 $(".signbtn").click(function(){
+                    $("#photo").hide(); 
+                    $("#document").hide();
+                    $("#sign").show();
+                    $("#lunch").hide();
+                    $("#health").hide();
+                    $("#siblings").hide();
+                    $("#contact").hide();
+                    $("#enroll").hide();
+                     $("#parent").hide();
+                    $(".signbtn").css("border-bottom","4px solid blue");
+                        
+                    $(".parentbtn").css("border-bottom","0px solid blue");
+                     $(".lunchbtn").css("border-bottom","0px solid blue");
+                     $(".documentbtn").css("border-bottom","0px solid blue");
+                     $(".contactbtn").css("border-bottom","0px solid blue");
+                     $(".enrollbtn").css("border-bottom","0px solid blue");
+                     $(".healthbtn").css("border-bottom","0px solid blue");
+                     $(".photobtn").css("border-bottom","0px solid blue");
+                     $(".siblingsbtn").css("border-bottom","0px solid blue");
+                });
+                 $(".parentbtn").click(function(){
+                    $("#photo").hide(); 
+                    $("#document").hide();
+                    $("#sign").hide();
+                    $("#lunch").hide();
+                    $("#health").hide();
+                    $("#siblings").hide();
+                    $("#contact").hide();
+                    $("#enroll").hide();
+                     $("#parent").show();
+                     
+                    $(".parentbtn").css("border-bottom","4px solid blue");
+                     $(".lunchbtn").css("border-bottom","0px solid blue");
+                     $(".signbtn").css("border-bottom","0px solid blue");
+                     $(".documentbtn").css("border-bottom","0px solid blue");
+                     $(".contactbtn").css("border-bottom","0px solid blue");
+                     $(".enrollbtn").css("border-bottom","0px solid blue");
+                     $(".healthbtn").css("border-bottom","0px solid blue");
+                     $(".photobtn").css("border-bottom","0px solid blue");
+                     $(".siblingsbtn").css("border-bottom","0px solid blue");
+                });
+                 $(".siblingsbtn").click(function(){
+                    $("#photo").hide(); 
+                    $("#document").hide();
+                    $("#sign").hide();
+                    $("#lunch").hide();
+                    $("#health").hide();
+                    $("#siblings").show();
+                    $("#contact").hide();
+                    $("#enroll").hide();
+                     $("#parent").hide();
+                    $(".siblingsbtn").css("border-bottom","4px solid blue");
+                        
+                    $(".parentbtn").css("border-bottom","0px solid blue");
+                     $(".lunchbtn").css("border-bottom","0px solid blue");
+                     $(".signbtn").css("border-bottom","0px solid blue");
+                     $(".documentbtn").css("border-bottom","0px solid blue");
+                     $(".contactbtn").css("border-bottom","0px solid blue");
+                     $(".enrollbtn").css("border-bottom","0px solid blue");
+                     $(".healthbtn").css("border-bottom","0px solid blue");
+                     $(".photobtn").css("border-bottom","0px solid blue");
+                    
+                });
+                 $(".contactbtn").click(function(){
+                    $("#photo").hide(); 
+                    $("#document").hide();
+                    $("#sign").hide();
+                    $("#lunch").hide();
+                    $("#health").hide();
+                    $("#siblings").hide();
+                    $("#contact").show();
+                    $("#enroll").hide();
+                     $("#parent").hide();
+                    $(".contactbtn").css("border-bottom","4px solid blue");
+                        
+                    $(".parentbtn").css("border-bottom","0px solid blue");
+                     $(".lunchbtn").css("border-bottom","0px solid blue");
+                     $(".signbtn").css("border-bottom","0px solid blue");
+                     $(".documentbtn").css("border-bottom","0px solid blue");
+                
+                     $(".enrollbtn").css("border-bottom","0px solid blue");
+                     $(".healthbtn").css("border-bottom","0px solid blue");
+                     $(".photobtn").css("border-bottom","0px solid blue");
+                     $(".siblingsbtn").css("border-bottom","0px solid blue");
+                });
+                
+                
+            });
+        </script>
+    </head>
+    <body>
+         <div class="p-2 container-fluid" style="width:97%;">
+            <h5><b>Edit Information</b></h5>
+            <div class="d-flex p-2">
+                <a  class="text-decoration-none text-black">Home </a><span> <pre> > </pre> </span>
+                <a  class=" text-decoration-none text-black">Student Management&nbsp; </a><span><pre> > </pre></span>
+                <a  class=" text-decoration-none text-black">Student Information </a><span><pre> > </pre></span>
+                <a  class=" text-decoration-none text-black">General Information </a><span><pre> > </pre></span>
+                <a class="text-decoration-none" style="color: blue">Edit Information</a>
+            </div>
+        </div>
+        
+            <div class="rounded bg-light border mb-3 shadow p-3 container-fluid " style="width:97%; height:max-content; margin-top: -20px;">
+                <div class="d-flex justify-content-between">
+                <div><b class="d-inline-block">Profile Details</b><span>&nbsp;|</span> <span class="text-secondary" style="font-size: 13px;">Student List</span></div>
+                
+                <div class="d-flex " style="width: 300px; justify-content: space-evenly">
+                    <div class="previousbtn topbtn d-flex justify-content-center align-items-center" style="border: 1px solid blue; border-radius: 17px;  width:35% ;color: blue;"> Previous </div>
+                    
+                     <div class="previousbtn topbtn d-flex justify-content-center align-items-center" style="border: 1px solid blue; border-radius: 17px; width:35%; color: blue;"> Next </div>
+            
+                    
+                    </div>
+                </div>
+                <hr/>
+                
+                
+                <div class="belowline d-flex">
+                    <div class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-person-circle " viewBox="0 0 16 16">
+  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+</svg></div>
+                    <div class="m-3">
+                        <table>
+                            <tr>
+                                <td >Student Name</td>
+                                <td >Admission No</td>
+                                <td >Status</td>
+                                <td >Current Class</td>
+                            </tr>
+                             <tr>
+                                <th>Sathish Kumar R</th>
+                                <th>12312</th>
+                                <th>Active</th>
+                                <th>XI-A</th>
+                            </tr>
+                        </table>
+                    </div>
+                
+                </div>
+            </div>
+        
+        <div class="d-flex justify-content-center position-relative">
+            <div class="bg-light border rounded shadow p-3 container-fluid" style="width:  97%; height:700px;">
+                <div class="form-title d-flex justify-content-between table-responsive">
+                    <div class="opt text-center enrollbtn" > Enrollment </div>
+                    <div class="opt text-center photobtn"> Photo </div>
+                    <div class="opt  text-center contactbtn"> Contact Details </div>
+                    <div class="opt text-center healthbtn"> Health </div>
+                    <div class="opt text-center parentbtn"> Parent's Details </div>
+                    
+                    <div class="opt text-center lunchbtn"> Lunch </div>
+                    <div class="opt text-center documentbtn"> Document </div>
+                    <div class="opt  text-center signbtn"> Parent's/photo </div>
+                    <div class="opt text-center siblingsbtn"> Siblings </div>
+                </div>
+            </div>
+              
+            
+    
+        <div class="container-fluid position-absolute  mt-5 "  id="enroll" style="width:  96%; height:max-content;" >
+            <div class="container p-3">
+                <div class="form-outline">
+                    <label class="form-label">Admission No</label>
+                    <input type="text" class="form-control"  style="width: max-content;"readonly />
+                </div>
+            
+                <div class="row mt-2">
+                      <div class="form-outline col">
+                            <label class="form-label">First Name</label>
+                            <input type="text" class="form-control"  />
+                      </div>
+                      <div class="form-outline col">
+                          <label class="form-label">Middle Name</label>
+                            <input type="text" class="form-control" />
+                    </div>
+                      <div class="form-outline  col">
+                            <label class="form-label">Last Name</label>
+                            <input type="text" class="form-control"  />
+                    </div>
+                </div>
+            
+                  <div class="row mt-2">
+                      <div class="form-outline col">
+                            <label class="form-label">Gender</label>
+                            <select class="form-control"><option >Male</option><option>Female</option><option>Others</option></select>
+                      </div>
+                      <div class="form-outline col">
+                          <label class="form-label">Date of Birth</label>
+                            <input type="Date" class="form-control" />
+                    </div>
+                </div>
+                
+                <div class="mt-2 row">
+                    <div class="form-outline col">
+                          <label class="form-label">Aadhar No</label>
+                            <input type="text" class="form-control" style="width:max-content;"/>
+                    </div>
+                </div>
+                
+                   <div class="row mt-2">
+                      <div class="form-outline col">
+                            <label class="form-label">Address</label>
+                            <input type="textarea" class="form-control"  />
+                      </div>
+                      <div class="form-outline col">
+                          <label class="form-label">District</label>
+                            <input type="text" class="form-control" />
+                    </div>
+                      <div class="form-outline  col">
+                            <label class="form-label">State</label>
+                            <input type="text" class="form-control"  />
+                    </div>
+                </div>
+                
+                  <div class="row mt-2">
+                      <div class="form-outline col">
+                            <label class="form-label">Religion</label>
+                            <input type="text" class="form-control"  />
+                      </div>
+                      <div class="form-outline col">
+                          <label class="form-label d-inline">Minority</label>
+                          <div class="">
+                              <input type="Radio" class="m-3" />Yes 
+                          <input type="Radio"  class="m-3"/>No
+                          </div>
+                            
+                    </div>
+                     
+                       
+                <div class="row mt-2">
+                      <div class="form-outline col">
+                            <label class="form-label">Fees Catagory</label>
+                            <input type="text" class="form-control"  />
+                      </div>
+                      <div class="form-outline col">
+                          <label class="form-label">Current Register Number</label>
+                            <input type="text" class="form-control" />
+                    </div>
+                      <div class="form-outline  col">
+                            <label class="form-label">Current Class</label>
+                            <input type="text" class="form-control"  />
+                    </div>
+                </div>
+                     
+                </div>
+                <div class="previousbtn topbtn d-flex justify-content-center align-items-center  float-start mt-4" style="border: 1px solid blue; border-radius: 17px;  width:100px; ;color: blue;"> Update </div>
+                
+            
+            </div>
+        </div>
+         <div class="container-fluid position-absolute  mt-5"  id="photo" style="width:  96%; height:max-content;" >
+            photo
+        </div>
+        <div class="container-fluid position-absolute mt-5"  id="document" style="width:  96%; height:max-content;" >
+            document
+        </div>
+         <div class="container-fluid position-absolute mt-5"  id="contact" style="width:  96%; height:max-content;" >
+            <div class="container p-3">
+                <div class="form-outline mt-2">
+                    <label class="form-label"><h5>Primary Contact</h5></label>
+                    <input type="text" class="form-control" style="width:max-content;"/>
+                </div>
+                 <div class="row mt-2">
+                      <div class="form-outline col">
+                            <label class="form-label">First Name</label>
+                            <input type="text" class="form-control"  />
+                      </div>
+                      <div class="form-outline col">
+                          <label class="form-label">Middle Name</label>
+                            <input type="text" class="form-control" />
+                    </div>
+                      <div class="form-outline  col">
+                            <label class="form-label">Last Name</label>
+                            <input type="text" class="form-control"  />
+                    </div>
+                </div>
+                 <div class="row mt-2">
+                      <div class="form-outline col">
+                            <label class="form-label">Phone Number</label>
+                            <input type="text" class="form-control"  />
+                      </div>
+                      <div class="form-outline col">
+                          <label class="form-label">Email Id</label>
+                            <input type="text" class="form-control" />
+                    </div>
+                </div>
+                
+                <div class="form-outline mt-4">
+                    <label class="form-label"><h5>Secondary Contact</h5></label>
+                    <input type="text" class="form-control" style="width:max-content;"/>
+                </div>
+                 <div class="row mt-2">
+                      <div class="form-outline col">
+                            <label class="form-label">First Name</label>
+                            <input type="text" class="form-control"  />
+                      </div>
+                      <div class="form-outline col">
+                          <label class="form-label">Middle Name</label>
+                            <input type="text" class="form-control" />
+                    </div>
+                      <div class="form-outline  col">
+                            <label class="form-label">Last Name</label>
+                            <input type="text" class="form-control"  />
+                    </div>
+                </div>
+                 <div class="row mt-2">
+                      <div class="form-outline col">
+                            <label class="form-label">Phone Number</label>
+                            <input type="text" class="form-control"  />
+                      </div>
+                      <div class="form-outline col">
+                          <label class="form-label">Email Id</label>
+                            <input type="text" class="form-control" />
+                    </div>
+                </div>
+                
+                   <div class="previousbtn topbtn d-flex justify-content-center align-items-center  float-start mt-4" style="border: 1px solid blue; border-radius: 17px;  width:100px; ;color: blue;"> Update </div>
+                
+             </div>
+        </div>
+        <div class="container-fluid position-absolute mt-5"  id="parent" style="width:  96%; height:max-content;" >
+            parent
+        </div>
+         <div class="container-fluid position-absolute mt-5 "  id="health" style="width:  96%; height:max-content;" >
+            health
+        </div>
+        <div class="container-fluid position-absolute mt-5"  id="lunch" style="width:  96%; height:max-content;" >
+            lunch
+        </div>
+         <div class="container-fluid position-absolute mt-5"  id="sign" style="width:  96%; height:max-content;" >
+            parent's sign
+        </div>
+        <div class="container-fluid position-absolute mt-5"  id="siblings" style="width:  96%; height:max-content;" >
+            siblings
+        </div>
+        </div>
+    </body>
+</html>
