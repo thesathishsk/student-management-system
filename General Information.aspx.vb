@@ -16,9 +16,6 @@ Public Class General_Information
         Return studentlist
     End Function
 
-
-
-
     Function getTable(id As Int64) As DataSet
         Dim conn As New SqlConnection(connstr)
         Dim cmd As New SqlCommand("select * from StudentInformation where admission_id=" + (id.ToString()), conn)
